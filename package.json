@@ -1,6 +1,6 @@
 {
   "name": "fit-number",
-  "version": "1.0.61",
+  "version": "1.0.62",
   "description": "数字选择器",
   "main": "lib/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "fit-style": "^1.1.49",
     "react": "^0.14.7",
     "classnames": "^2.2.1",
-    "fit-input": "^1.1.69",
+    "fit-input": "^1.1.70",
     "jquery": "~2.1.3"
   }
 }
