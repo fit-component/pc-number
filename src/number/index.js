@@ -141,11 +141,17 @@ export default class Number extends React.Component {
     }
 
     render() {
+        const {className, height, width, ...others} = this.props
+        const classes = classNames({
+            '_namespace': true,
+            [className]: className
+        })
+
         let textStyle = {
-            height: this.props.height
+            height: height
         }
-        if (this.props.width) {
-            textStyle.width = this.props.width
+        if (width) {
+            textStyle.width = width
         } else {
             textStyle.flexGrow = 1
         }
@@ -154,7 +160,7 @@ export default class Number extends React.Component {
 
         return (
             <div style={mergedStyle}
-                 className="_namespace">
+                 className={classes}>
                 <Input {...this.props}
                     value={this.state.value}
                     onChange={this.handleChange.bind(this)}
@@ -166,11 +172,23 @@ export default class Number extends React.Component {
 
 Number.defaultProps = {
     style: {},
+
+    // @desc 最小值
     min: -Infinity,
+
+    // @desc 最大值
     max: Infinity,
+
+    // @desc 增减步长
     step: 1,
+
+    // @desc 是否支持浮点类型
     float: false,
+
+    // @desc 长按变化频率
     speed: 200,
+
+    // @desc 内容修改回调
     onChange: ()=> {
     }
 }
