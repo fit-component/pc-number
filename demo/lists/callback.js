@@ -8,8 +8,8 @@ export default class Demo extends React.Component {
 
     render() {
         return (
-            <Number float="1"
-                    step="1.5"
+            <Number float={1}
+                    step={1.5}
                     onChange={this.handleChange.bind(this)}/>
         )
     }

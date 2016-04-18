@@ -5,7 +5,7 @@ export default class Demo extends React.Component {
     render() {
         return (
             <div>
-                <Number width="150"/>
+                <Number width={150}/>
                 <Number style={{marginTop:10}}/>
                 <Number label="长度"
                         labelWidth={60}

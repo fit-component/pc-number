@@ -4,7 +4,7 @@ import Number from 'fit-number'
 export default class Demo extends React.Component {
     render() {
         return (
-            <Number speed="50"/>
+            <Number speed={50}/>
         )
     }
 }
