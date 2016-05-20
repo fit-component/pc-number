@@ -1,4 +1,4 @@
 import Number from './number'
 
 export default Number
-export { Number }
+export {Number}
