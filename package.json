@@ -1,6 +1,6 @@
 {
   "name": "fit-number",
-  "version": "4.0.30",
+  "version": "4.0.31",
   "description": "数字选择器",
   "main": "lib/index.js",
   "scripts": {
@@ -15,10 +15,10 @@
   "dependencies": {
     "react": "^15.0.1",
     "classnames": "^2.2.3",
-    "fit-input": "^5.0.18",
+    "fit-input": "^5.0.19",
     "jquery": "^2.1.4",
-    "fit-button": "^3.1.28",
-    "fit-transmit-transparently": "^3.1.20",
+    "fit-button": "^3.1.29",
+    "fit-transmit-transparently": "^3.1.21",
     "lodash": "^3.10.1"
   },
   "typings": "lib/index.d.ts"
