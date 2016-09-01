@@ -35,11 +35,7 @@ export default class Number extends React.Component<module.PropsInterface, modul
     }
 
     componentWillReceiveProps(nextProps: module.PropsInterface) {
-        if ('value' in nextProps) {
-            this.setState({
-                value: parseToNumber(nextProps.value, this, true)
-            })
-        }
+
     }
 
     increase() {
