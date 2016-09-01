@@ -82,7 +82,7 @@ export default class Number extends React.Component<module.PropsInterface, modul
     }
 
     render() {
-        const _others = others(new module.Props(), this.props)
+        const _others = others(new module.Props(), this.props, ['onChange'])
         const {className, height, width} = this.props
         const classes = classNames({
             '_namespace': true,
