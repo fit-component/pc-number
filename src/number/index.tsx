@@ -72,6 +72,7 @@ export default class Number extends React.Component<module.PropsInterface, modul
 
     handleChange(event: any) {
         this.safeSetValue(event.target.value)
+        this.props['onChange'] && this.props['onChange'](event)
     }
 
     safeSetValue(value: any, fullLength?: boolean) {
