@@ -1,6 +1,6 @@
 export interface PropsInterface {
     /**
-     * 受控值
+     * 值
      */
     value?: number | string
 
